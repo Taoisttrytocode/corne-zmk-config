@@ -44,11 +44,6 @@
             key-positions = <26 25>;
         };
 
-        d {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <10 9>;
-        };
-
         e {
             bindings = <&kp ENTER>;
             key-positions = <22 21>;
@@ -61,7 +56,7 @@
 
         g {
             bindings = <&kp EQUAL>;
-            key-positions = <21 20>;
+            key-positions = <7 8>;
         };
 
         h {
@@ -71,7 +66,7 @@
 
         j {
             bindings = <&sys_reset>;
-            key-positions = <30 10>;
+            key-positions = <30 9>;
         };
 
         greater {
@@ -105,7 +100,7 @@
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <7 18>;
+            key-positions = <8 19>;
         };
     };
 
@@ -115,10 +110,10 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp F           &kp P           &kp B            &kp J      &kp L        &kp U      &kp Y    &kp APOS         &kp BSPC
-&kp TAB  &kp A  &kp R  &kp S           &kp T           &kp G            &kp M      &kp N        &kp E      &kp I    &kp O            &kp TAB
-&kp TAB  &kp Z  &kp X  &kp C           &kp D           &kp V            &kp K      &kp H        &kp COMMA  &kp DOT  &kp KP_ASTERISK  &kp RSHFT
-                       &lt 3 KP_EQUAL  &lt 1 LEFT_ALT  &kp BACKSPACE    &kp SPACE  &lt 2 LCTRL  &kp TAB
+&kp ESC  &kp Q  &kp W  &kp F            &kp P           &kp B        &kp J      &kp L        &kp U      &kp Y    &kp APOS         &kp BSPC
+&kp TAB  &kp A  &kp R  &kp S            &kp T           &kp G        &kp M      &kp N        &kp E      &kp I    &kp O            &kp TAB
+&kp TAB  &kp Z  &kp X  &kp C            &kp D           &kp V        &kp K      &kp H        &kp COMMA  &kp DOT  &kp KP_ASTERISK  &kp RSHFT
+                       &lt 3 BACKSPACE  &lt 1 LEFT_ALT  &kp ENTER    &kp SPACE  &lt 2 LCTRL  &kp TAB
             >;
         };
 
