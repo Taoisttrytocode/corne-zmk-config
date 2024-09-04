@@ -73,6 +73,40 @@
             bindings = <&sys_reset>;
             key-positions = <30 10>;
         };
+
+        greater {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <15 28>;
+            layers = <0>;
+        };
+
+        lessthan {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <31 20>;
+            layers = <0>;
+        };
+
+        under {
+            bindings = <&kp UNDER>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        minus {
+            bindings = <&kp KP_MINUS>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <3 16>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <7 18>;
+        };
     };
 
     keymap {
@@ -81,30 +115,30 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp F      &kp P           &kp B                     &kp J        &kp L           &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&kp TAB  &kp A  &kp R  &kp S      &kp T           &kp G                     &kp M        &kp N           &kp E      &kp I    &kp O          &kp RET
-&kp TAB  &kp Z  &kp X  &kp C      &kp D           &kp V                     &kp K        &kp H           &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-                       &lt 1 SQT  &lt 1 LEFT_ALT  &mt LEFT_ALT BACKSPACE    &lt 3 SPACE  &kp LEFT_SHIFT  &kp SQT
+&kp ESC  &kp Q  &kp W  &kp F           &kp P           &kp B            &kp J      &kp L        &kp U      &kp Y    &kp APOS         &kp BSPC
+&kp TAB  &kp A  &kp R  &kp S           &kp T           &kp G            &kp M      &kp N        &kp E      &kp I    &kp O            &kp TAB
+&kp TAB  &kp Z  &kp X  &kp C           &kp D           &kp V            &kp K      &kp H        &kp COMMA  &kp DOT  &kp KP_ASTERISK  &kp RSHFT
+                       &lt 3 KP_EQUAL  &lt 1 LEFT_ALT  &kp BACKSPACE    &kp SPACE  &lt 2 LCTRL  &kp TAB
             >;
         };
 
         number_layer {
             label = "1";
             bindings = <
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp KP_NUMBER_7  &kp N8           &kp N9           &kp N9  &kp N0  &none
-&none  &none   &none   &none   &none   &none     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none   &none   &none
-&none  &none   &none   &none   &none   &none     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none   &none   &none
-                       &none   &none   &none     &none            &none            &none
+&none  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET   &kp EXCLAMATION  &kp N5            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS  &kp KP_MINUS  &none
+&none  &kp AT_SIGN   &kp LEFT_BRACKET      &kp DOLLAR  &kp POUND        &none             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PIPE     &none         &none
+&none  &none         &none                 &none       &none            &none             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp N3       &none         &none
+                                           &none       &none            &kp LEFT_SHIFT    &kp KP_NUMBER_0  &kp PLUS         &kp KP_MINUS
             >;
         };
 
         bt_layer {
             label = "2";
             bindings = <
-&kp ESC       &kp N1        &kp N2          &kp N3        &kp N4        &kp N5         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&none         &none         &kp LEFT_ARROW  &kp DEL       &kp RIGHT     &bt BT_CLR     &none   &none   &none   &none   &none   &none
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0  &bootloader    &none   &none   &none   &none   &none   &none
-                                            &none         &none         &none          &none   &none   &none
+&kp ESC       &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET   &kp EXCLAMATION  &kp N5         &kp N6  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &kp N0  &none
+&none         &kp AT_SIGN   &kp LEFT_BRACKET      &kp DOLLAR  &kp POUND        &bt BT_CLR     &none   &kp AMPERSAND  &none         &kp PIPE      &none   &none
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2          &kp DOWN    &bt BT_SEL 0     &bootloader    &none   &kp HASH       &none         &none         &none   &none
+                                                  &none       &none            &none          &none   &none          &none
             >;
         };
 
